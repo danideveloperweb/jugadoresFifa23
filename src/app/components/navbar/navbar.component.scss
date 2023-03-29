@@ -1,0 +1,13 @@
+@mixin navbar-color {
+    .navbar {
+      background: linear-gradient(to right, rgba(26, 165, 180, 0.5), rgba(16, 88, 107, 0.15));
+      margin-bottom: 5%;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      padding-left: 1.3em;
+    }
+  }
+  @include navbar-color;
+  
+  

@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+$transition-speed: 0.6s;
+$background-card:#1aa5b480;
+
+@mixin card-content($background-card) {
+background-color: $background-card;
+}
+
+@mixin card-flexbox() {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+
