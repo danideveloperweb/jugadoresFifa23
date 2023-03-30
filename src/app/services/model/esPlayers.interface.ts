@@ -1,10 +1,13 @@
-export interface Jugador {
-    nombre: string;
-    penaltis: number;
-    centros: number;
-    aceleracion: number;
-    regates: number;
-    voleas: number;
-    tirosLejanos: number;
+export interface IEsPlayer {
+  id: number;
+  name: string;
+  penalties: number;
+  crosses: number;
+  acceleration: number;
+  dribbling: number;
+  volleys: number;
+  longShots: number;
+  img: string;
+
   }
   
