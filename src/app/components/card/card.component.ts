@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IEsPlayer } from 'src/app/services/model/esPlayers.interface';
 
 @Component({
   selector: 'app-card',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
+
+  @Input() esPlayerCard!: IEsPlayer;
 
 }

@@ -1,42 +1,52 @@
-export const JUGADORES = [
+import { IEsPlayer } from "./esPlayers.interface";
+
+export const EsPlayer :IEsPlayer[] = [
     {
         id: 1,
-        nombre: 'Karim Benzema',
-        penaltis: 84,
-        centros: 71,
-        aceleracion: 82,
-        regates: 85,
-        voleas: 84,
-        tirosLejanos: 83
+        name: 'Karim Benzema',
+        penalties: 84,
+        crosses: 71,
+        acceleration: 82,
+        dribbling: 85,
+        volleys: 84,
+        longShots: 83,
+        img: "assets/img/benzema.png"
+
     },
     {
-        id:2,
-        nombre: 'Leo Messi',
-        penaltis: 75,
-        centros: 77,
-        aceleracion: 92,
-        regates: 96,
-        voleas: 86,
-        tirosLejanos: 90
+        id: 2,
+        name: 'Leo Messi',
+        penalties: 75,
+        crosses: 77,
+        acceleration: 92,
+        dribbling: 96,
+        volleys: 86,
+        longShots: 90,
+        img: "assets/img/messi.png"
+
     },
     {
-        id:3,
-        nombre: 'Cristiano Ronaldo',
-        penaltis: 93,
-        centros: 77,
-        aceleracion: 89,
-        regates: 88,
-        voleas: 93,
-        tirosLejanos: 92
+        id: 3,
+        name: 'Cristiano Ronaldo',
+        penalties: 93,
+        crosses: 77,
+        acceleration: 89,
+        dribbling: 88,
+        volleys: 93,
+        longShots: 92,
+        img: "assets/img/cristiano.png"
+
     },
     {
-        id:4,
-        nombre: 'Robert Lewandowski',
-        penaltis: 87,
-        centros: 69,
-        aceleracion: 84,
-        regates: 87,
-        voleas: 86,
-        tirosLejanos: 90
+        id: 4,
+        name: 'Robert Lewandowski',
+        penalties: 87,
+        crosses: 69,
+        acceleration: 84,
+        dribbling: 87,
+        volleys: 86,
+        longShots: 90,
+        img: "assets/img/lewandowski.png"
+
     }
 ];

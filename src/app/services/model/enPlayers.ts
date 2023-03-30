@@ -1,4 +1,6 @@
-export const PLAYERS = [
+import { IEnPlayer } from "./enPlayers.interface";
+
+export const EnPlayer: IEnPlayer[] = [
     {
         id: 1,
         name: 'Karim Benzema',
@@ -7,7 +9,9 @@ export const PLAYERS = [
         acceleration: 82,
         dribbling: 85,
         volleys: 84,
-        longShots: 83
+        longShots: 83,
+        img: "assets/img/benzema.png"
+
     },
     {
         id: 2,
@@ -17,7 +21,9 @@ export const PLAYERS = [
         acceleration: 92,
         dribbling: 96,
         volleys: 86,
-        longShots: 90
+        longShots: 90,
+        img: "assets/img/messi.png"
+
     },
     {
         id: 3,
@@ -27,7 +33,9 @@ export const PLAYERS = [
         acceleration: 89,
         dribbling: 88,
         volleys: 93,
-        longShots: 92
+        longShots: 92,
+        img: "assets/img/cristiano.png"
+
     },
     {
         id: 4,
@@ -37,6 +45,8 @@ export const PLAYERS = [
         acceleration: 84,
         dribbling: 87,
         volleys: 86,
-        longShots: 90
+        longShots: 90,
+        img: "assets/img/lewandowski.png"
+
     }
 ];
