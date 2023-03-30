@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { HomeService } from 'src/app/services/home.service';
 import { IEsPlayer } from 'src/app/services/model/esPlayers.interface';
 
@@ -11,7 +12,8 @@ export class HomeComponent implements OnInit {
 
   playerHome!: IEsPlayer[];
 
-  constructor(private playerHomeService: HomeService){ }
+  constructor(private playerHomeService: HomeService,
+              private router: Router){ }
 
   ngOnInit(): void {
     this.playerHome = this.playerHomeService.getEsPlayer();
