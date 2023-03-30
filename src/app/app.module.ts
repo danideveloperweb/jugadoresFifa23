@@ -11,6 +11,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeService } from './services/home.service';
 import { PlayerDetailComponent } from './components/player-detail/player-detail.component';
+import { VideoComponent } from './components/video/video.component';
+import { NavigationService } from './services/navigation.service';
+import { EquipmentHistoryComponent } from './components/equipment-history/equipment-history.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +23,9 @@ import { PlayerDetailComponent } from './components/player-detail/player-detail.
     CardComponent,
     NavbarComponent,
     FooterComponent,
-    PlayerDetailComponent
+    PlayerDetailComponent,
+    VideoComponent,
+    EquipmentHistoryComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +33,7 @@ import { PlayerDetailComponent } from './components/player-detail/player-detail.
     RouterModule,
     HttpClientModule,
   ],
-  providers: [HomeService],
+  providers: [HomeService, NavigationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
