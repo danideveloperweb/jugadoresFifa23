@@ -1,5 +1,5 @@
 export interface IEnPlayer {
-  id: number;
+  id: string;
   name: string;
   penalties: number;
   crosses: number;

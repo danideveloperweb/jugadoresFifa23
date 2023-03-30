@@ -2,7 +2,7 @@ import { IEsPlayer } from "./esPlayers.interface";
 
 export const EsPlayer :IEsPlayer[] = [
     {
-        id: 1,
+        id: "0",
         name: 'Karim Benzema',
         penalties: 84,
         crosses: 71,
@@ -14,7 +14,7 @@ export const EsPlayer :IEsPlayer[] = [
 
     },
     {
-        id: 2,
+        id: "1",
         name: 'Leo Messi',
         penalties: 75,
         crosses: 77,
@@ -26,7 +26,7 @@ export const EsPlayer :IEsPlayer[] = [
 
     },
     {
-        id: 3,
+        id: "2",
         name: 'Cristiano Ronaldo',
         penalties: 93,
         crosses: 77,
@@ -38,7 +38,7 @@ export const EsPlayer :IEsPlayer[] = [
 
     },
     {
-        id: 4,
+        id:"3",
         name: 'Robert Lewandowski',
         penalties: 87,
         crosses: 69,

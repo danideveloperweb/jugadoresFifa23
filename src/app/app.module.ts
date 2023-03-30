@@ -10,6 +10,7 @@ import { CardComponent } from './components/card/card.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeService } from './services/home.service';
+import { PlayerDetailComponent } from './components/player-detail/player-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeService } from './services/home.service';
     HomeComponent,
     CardComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    PlayerDetailComponent
   ],
   imports: [
     BrowserModule,

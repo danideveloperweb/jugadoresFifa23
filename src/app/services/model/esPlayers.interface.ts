@@ -1,5 +1,5 @@
 export interface IEsPlayer {
-  id: number;
+  id: string;
   name: string;
   penalties: number;
   crosses: number;
