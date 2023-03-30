@@ -7,6 +7,14 @@
             <li class="nav-item" routerLinkActive="active">
                 <a class="nav-link" [routerLink]="['home']">Home</a>
             </li>
+            <li>
+              <button (click)="navigation.goBack()">Back to {{navigation.getPreviousUrl()}} </button>
+          </li>
         </ul>
     </div>
 </nav>
+<h3>History</h3>
+
+<span *ngFor="let url of navigation.getHistory(); let i = index">    
+    {{i}}={{url}}  
+</span>
