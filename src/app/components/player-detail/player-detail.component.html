@@ -1,15 +1,57 @@
-
-<div class="card mb-3" style="max-width: 540px;">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img [src]="playerId.img" class="img-fluid rounded-start" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">{{playerId.name}}</h5>
-          <p class="card-text" routerLink="/detail/{{playerId.id}}/video">Video</p>
-          <p class="card-text" routerLink="/detail/{{playerId.id}}/history">Equiment History</p>
+<div class="card">
+  <div class="row no-gutters">
+    <div class="col-md-5">
+      <img class="card-img-top" [src]="playerId.img" alt="Imagen del jugador">
+    </div>
+    <div class="col-md-7">
+      <div class="card-body">
+        <h5 class="card-title">{{playerId.nombre}}</h5>
+        <p class="card-text">{{playerId.posicion}}</p>
+        <div class="row">
+          <div class="col-6">
+            <p>Penalties:</p>
+            <p>Crosses:</p>
+            <p>Acceleration:</p>
+            <p>Dribbling:</p>
+            <p>Volleys:</p>
+            <p>Long Shots:</p>
+            <p class="card-text" routerLink="/detail/{{playerId.id}}/video">Jugadas</p>
+          </div>
+          <div class="col-6 caracterist">
+            <div class="progress" style="height: 14px;">
+              <div class="progress-bar" role="progressbar" [style.width.%]="playerId.penalties"
+                [attr.aria-valuenow]="playerId.penalties" aria-valuemin="0" aria-valuemax="100">{{playerId.penalties}}%
+              </div>
+            </div>
+            <div class="progress" style="height: 14px;">
+              <div class="progress-bar" role="progressbar" [style.width.%]="playerId.crosses"
+                [attr.aria-valuenow]="playerId.crosses" aria-valuemin="0" aria-valuemax="100">{{playerId.crosses}}%
+              </div>
+            </div>
+            <div class="progress" style="height: 14px;">
+              <div class="progress-bar" role="progressbar" [style.width.%]="playerId.acceleration"
+                [attr.aria-valuenow]="playerId.acceleration" aria-valuemin="0" aria-valuemax="100">
+                {{playerId.acceleration}}%</div>
+            </div>
+            <div class="progress" style="height: 14px;">
+              <div class="progress-bar" role="progressbar" [style.width.%]="playerId.dribbling"
+                [attr.aria-valuenow]="playerId.dribbling" aria-valuemin="0" aria-valuemax="100">{{playerId.dribbling}}%
+              </div>
+            </div>
+            <div class="progress" style="height: 14px;">
+              <div class="progress-bar" role="progressbar" [style.width.%]="playerId.volleys"
+                [attr.aria-valuenow]="playerId.volleys" aria-valuemin="0" aria-valuemax="100">{{playerId.volleys}}%
+              </div>
+            </div>
+            <div class="progress" style="height: 14px;">
+              <div class="progress-bar" role="progressbar" [style.width.%]="playerId.longShots"
+                [attr.aria-valuenow]="playerId.longShots" aria-valuemin="0" aria-valuemax="100">{{playerId.longShots}}%
+              </div>
+            </div>
+            <p class="card-text" routerLink="/detail/{{playerId.id}}/video">Video</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>

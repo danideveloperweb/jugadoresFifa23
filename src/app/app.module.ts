@@ -14,7 +14,8 @@ import { PlayerDetailComponent } from './components/player-detail/player-detail.
 import { VideoComponent } from './components/video/video.component';
 import { NavigationService } from './services/navigation.service';
 import { EquipmentHistoryComponent } from './components/equipment-history/equipment-history.component';
-
+import { CookieService } from 'ngx-cookie-service';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,14 +27,16 @@ import { EquipmentHistoryComponent } from './components/equipment-history/equipm
     PlayerDetailComponent,
     VideoComponent,
     EquipmentHistoryComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
+    CommonModule 
   ],
-  providers: [HomeService, NavigationService],
+  providers: [HomeService, NavigationService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
