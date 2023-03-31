@@ -8,6 +8,7 @@ export interface IEsPlayer {
   volleys: number;
   longShots: number;
   img: string;
-
+  vid:string[];
+  teams: any[];
   }
   

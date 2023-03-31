@@ -1,15 +1,23 @@
-<div class="video-grid">
-    <div class="video-grid__item">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1"></iframe>
-    </div>
-    <div class="video-grid__item">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2"></iframe>
-    </div>
-    <div class="video-grid__item">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3"></iframe>
-    </div>
-    <div class="video-grid__item">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_4"></iframe>
-    </div>
-  </div>
+
   
+<div class="container-fluid ">
+  <div class=" col mx-auto text-center">
+    <h1 class="card-text" >
+      <p>Video</p>
+    </h1>
+  
+  <div class="row row-cols-1 row-cols-md-2 mx-auto">
+    <ng-container *ngFor="let vidPlayer of saniUrl">
+      <div class="col">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" class="youtube-player" type="text/html" [src]="vidPlayer" frameborder="0"></iframe>
+        </div>
+      </div>
+
+    </ng-container>
+  </div>
+  <h2 class="card-text" routerLink="/detail/{{playerId.id}}/video/history">
+    Ir --> Equiment History
+  </h2>
+</div> 
+</div>

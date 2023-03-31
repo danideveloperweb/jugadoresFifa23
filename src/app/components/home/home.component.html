@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="row row-cols-1 row-cols-md-2 ">
         <div class="col " *ngFor="let player of playerHome">
             <app-card [esPlayerCard]="player" routerLink="/detail/{{player.id}}"></app-card>
         </div>

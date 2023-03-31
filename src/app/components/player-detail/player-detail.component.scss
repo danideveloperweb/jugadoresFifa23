@@ -1,0 +1,36 @@
+.card {
+    max-width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px #a1a1a1,
+        -5px -5px 10px #ffffff;
+}
+
+.card {
+    .col-md-7 {
+        .row {
+            .col-6 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            .progress {
+                margin-bottom: 9.5px;
+            }
+
+            .card-text {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.caracterist {
+    margin-top: 1rem;
+}
