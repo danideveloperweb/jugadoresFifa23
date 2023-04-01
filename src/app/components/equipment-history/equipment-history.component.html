@@ -1,1 +1,22 @@
-<p>equipment-history works!</p>
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="text-center">{{ history.name }}</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="row">
+          <div *ngFor="let team of history.teams" class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Equipo: {{ team.nameTeam }}</h5>
+                <p class="card-text">Año: {{ team.years }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

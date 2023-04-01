@@ -4,22 +4,20 @@ import { HomeService } from 'src/app/services/home.service';
 import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  selector: 'app-bread-crumb',
+  templateUrl: './bread-crumb.component.html',
+  styleUrls: ['./bread-crumb.component.scss']
 })
-export class NavbarComponent implements OnInit {
-
-
+export class BreadCrumbComponent implements OnInit {
 
   playerId:any;
 
   constructor(public navigation: NavigationService,
-    private activateRoute: ActivatedRoute,
+    public route: ActivatedRoute,
     private detailService: HomeService) { }
     
   ngOnInit(): void {
-    this.activateRoute.params.subscribe((params:any) => {
+    this.route.params.subscribe((params:any) => {
       this.playerId = this.detailService.getEsPlayerDetail(params['id']);
     });
   }

@@ -10,13 +10,13 @@ import { HomeService } from 'src/app/services/home.service';
 })
 export class PlayerDetailComponent implements OnInit {
 
-playerId:any;
+  playerId: any;
 
   constructor(private activateRoute: ActivatedRoute,
-               private detailService: HomeService ) {}
- 
+    private detailService: HomeService) { }
+
   ngOnInit(): void {
-    this.activateRoute.params.subscribe((params:any) => {
+    this.activateRoute.params.subscribe((params: any) => {
       this.playerId = this.detailService.getEsPlayerDetail(params['id']);
     });
   }

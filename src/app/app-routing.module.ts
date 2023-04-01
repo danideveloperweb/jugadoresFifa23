@@ -6,13 +6,13 @@ import { PlayerDetailComponent } from './components/player-detail/player-detail.
 import { VideoComponent } from './components/video/video.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'detail/:id', component: PlayerDetailComponent },
-  { path: 'detail/:id/video', component: VideoComponent },
-  { path: 'detail/:id/video/history', component: EquipmentHistoryComponent },
-  { path: '**', pathMatch:'full', redirectTo:'home' },
-
+  { path: 'home', component: HomeComponent, data: { breadcrumb: 'Inicio' } },
+  { path: 'detail/:id', component: PlayerDetailComponent, data: { breadcrumb: 'detail/{{id}}' } },
+  { path: 'detail/:id/video', component: VideoComponent, data: { breadcrumb: 'Video' } },
+  { path: 'detail/:id/video/history', component: EquipmentHistoryComponent, data: { breadcrumb: 'Historial de equipo' } },
+  { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
