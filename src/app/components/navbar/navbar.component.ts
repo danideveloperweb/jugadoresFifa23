@@ -9,14 +9,13 @@ import { NavigationService } from 'src/app/services/navigation.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
-
-  playerId:any;
+export class NavbarComponent{
 
   constructor(public navigation: NavigationService,
-    public translate: TranslateService,
-    public activateRoute: ActivatedRoute,
-    private detailService: HomeService) { 
+              public translate: TranslateService,
+              public activateRoute: ActivatedRoute,
+             ) { 
+
       translate.addLangs(['es', 'en']);
       if(localStorage.getItem("locale")) {
         translate.setDefaultLang(localStorage.getItem("locale") || "[]");
@@ -33,11 +32,4 @@ export class NavbarComponent implements OnInit {
       this.translate.setDefaultLang(lang);
       localStorage.setItem("locale", lang);
     }
-  
-    
-  ngOnInit(): void {
-    this.activateRoute.params.subscribe((params:any) => {
-      this.playerId = this.detailService.getEsPlayerDetail(params['id']);
-    });
-  }
 }

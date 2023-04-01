@@ -1,27 +1,19 @@
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item" >
-                <a class="nav-link" [routerLink]="'home'">Home</a>
-            </li>
-            <!-- <li >
-              <button (click)="navigation.goBack()">Back to {{navigation.getPreviousUrl()}} </button>
-          </li> -->
-
-        </ul>
-        <span class="form">
-          <select class="form-control" #selectedLang (change)="switchLanguage(selectedLang.value)">
-              <option *ngFor="let language of translate.getLangs()" [value]="language"
-                  [selected]="language === translate.currentLang">
-                  {{ language }}
-              </option>
-          </select>
-      </span>
-    </div>
+<nav class="navbar navbar-expand-lg">
+  <ul class="navbar-nav flex-column ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="'home'">Home</a>
+    </li>
+  </ul>
+  <span class="form-inline mr-sm-2">
+    <select class="form-control" #selectedLang (change)="switchLanguage(selectedLang.value)">
+      <option *ngFor="let language of translate.getLangs()" [value]="language" [selected]="language === translate.currentLang">
+        {{ language }}
+      </option>
+    </select>
+  </span>
 </nav>
+
+
 
 <!-- <span *ngFor="let url of navigation.getHistory(); let i = index">    
     {{i}}={{url}}  
