@@ -13,15 +13,15 @@ export const EsPlayer :IEsPlayer[] = [
         img: "assets/img/benzema.png",
         vid:[
             "https://www.youtube.com/embed/1e4qBEDC3ZA",
-            "https://www.youtube.com/watch?v=PEuveiDBHfs",
-            "https://www.youtube.com/watch?v=S0Xd1IShdbI",
-            "https://www.youtube.com/watch?v=GWc4F_DWPm4"
+            "https://www.youtube.com/embed/PEuveiDBHfs",
+            "https://www.youtube.com/embed/S0Xd1IShdbI",
+            "https://www.youtube.com/embed/GWc4F_DWPm4"
         ],
         teams: [
-            { name: 'Olympique Lyon', years: '2004-2005' },
-            { name: 'Olympique Lyon B', years: '2005-2006' },
-            { name: 'Olympique Lyon', years: '2006-2009' },
-            { name: 'Real Madrid', years: '2009-present' }
+            { nameTeam: 'Olympique Lyon', years: '2004-2005' },
+            { nameTeam: 'Olympique Lyon B', years: '2005-2006' },
+            { nameTeam: 'Olympique Lyon', years: '2006-2009' },
+            { nameTeam: 'Real Madrid', years: '2009-present' }
           ]
 
     },
@@ -36,14 +36,14 @@ export const EsPlayer :IEsPlayer[] = [
         longShots: 90,
         img: "assets/img/messi.png",
         vid:[
-            "https://www.youtube.com/watch?v=PMZy53PHbY0",
-            "https://www.youtube.com/watch?v=VmfLN-9aHRM",
-            "https://www.youtube.com/watch?v=twOMe6o1eLU",
-            "https://www.youtube.com/watch?v=rpo_mZXoyig"
+            "https://www.youtube.com/embed/Kq9FDBOBrtc",
+            "https://www.youtube.com/embed/F-nxbw-O9VY",
+            "https://www.youtube.com/embed/twOMe6o1eLU",
+            "https://www.youtube.com/embed/rpo_mZXoyig"
         ],
         teams: [
-            { name: 'FC Barcelona B', years: '2003-2004' },
-            { name: 'FC Barcelona', years: '2004-present' }
+            { nameTeam: 'FC Barcelona B', years: '2003-2004' },
+            { nameTeam: 'FC Barcelona', years: '2004-present' }
           ]
 
     },
@@ -58,17 +58,17 @@ export const EsPlayer :IEsPlayer[] = [
         longShots: 92,
         img: "assets/img/cristiano.png",
         vid:[
-            "https://www.youtube.com/watch?v=eFgSL_CHYwg",
-            "https://www.youtube.com/watch?v=4O8fCv2hJP0",
-            "https://www.youtube.com/watch?v=oc5Nj9HYCD8",
-            "https://www.youtube.com/watch?v=xSyRtEI6iAU"
+            "https://www.youtube.com/embed/eFgSL_CHYwg",
+            "https://www.youtube.com/embed/4O8fCv2hJP0",
+            "https://www.youtube.com/embed/oc5Nj9HYCD8",
+            "https://www.youtube.com/embed/xSyRtEI6iAU"
         ],
         teams: [
-            { name: 'Sporting CP B', years: '2001-2002' },
-            { name: 'Sporting CP', years: '2002-2003' },
-            { name: 'Manchester United', years: '2003-2009' },
-            { name: 'Real Madrid', years: '2009-2018' },
-            { name: 'Juventus', years: '2018-present' }
+            { nameTeam: 'Sporting CP B', years: '2001-2002' },
+            { nameTeam: 'Sporting CP', years: '2002-2003' },
+            { nameTeam: 'Manchester United', years: '2003-2009' },
+            { nameTeam: 'Real Madrid', years: '2009-2018' },
+            { nameTeam: 'Juventus', years: '2018-present' }
           ]
 
     },
@@ -83,18 +83,18 @@ export const EsPlayer :IEsPlayer[] = [
         longShots: 90,
         img: "assets/img/lewandowski.png",
         vid:[
-            "https://www.youtube.com/watch?v=1-HuV0R907Y",
-            "https://www.youtube.com/watch?v=LId-0Ech1H4",
-            "https://www.youtube.com/watch?v=nWfitbySEbc",
-            "https://www.youtube.com/watch?v=DFcgVcwUYB8"
+            "https://www.youtube.com/embed/1-HuV0R907Y",
+            "https://www.youtube.com/embed/LId-0Ech1H4",
+            "https://www.youtube.com/embed/nWfitbySEbc",
+            "https://www.youtube.com/embed/DFcgVcwUYB8"
         ],
         teams: [
-            { name: 'Delta Warsaw', years: '2005-2006' },
-            { name: 'Legia Warsaw', years: '2006-2008' },
-            { name: 'Znicz Pruszków', years: '2008-2008' },
-            { name: 'Lech Poznań', years: '2008-2010' },
-            { name: 'Borussia Dortmund', years: '2010-2014' },
-            { name: 'Bayern Munich', years: '2014-present' }
+            { nameTeam: 'Delta Warsaw', years: '2005-2006' },
+            { nameTeam: 'Legia Warsaw', years: '2006-2008' },
+            { nameTeam: 'Znicz Pruszków', years: '2008-2008' },
+            { nameTeam: 'Lech Poznań', years: '2008-2010' },
+            { nameTeam: 'Borussia Dortmund', years: '2010-2014' },
+            { nameTeam: 'Bayern Munich', years: '2014-present' }
           ]
 
     }

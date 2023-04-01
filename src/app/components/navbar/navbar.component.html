@@ -4,22 +4,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item" routerLinkActive="active"> -->
             <li class="nav-item" >
                 <a class="nav-link" [routerLink]="'home'">Home</a>
             </li>
-          <!-- <li><a  routerLink="/detail/{{playerId.id}}">Detail</a></li>
-          <li><a  routerLink="/detail/{{playerId.id}}/video">Video</a></li>
-          <li><a  routerLink="/detail/{{playerId.id}}/history">History</a></li> -->
-            <li >
+            <!-- <li >
               <button (click)="navigation.goBack()">Back to {{navigation.getPreviousUrl()}} </button>
-          </li>
+          </li> -->
 
         </ul>
     </div>
 </nav>
-<h3>History</h3>
 
-<span *ngFor="let url of navigation.getHistory(); let i = index">    
+<!-- <span *ngFor="let url of navigation.getHistory(); let i = index">    
     {{i}}={{url}}  
-</span>
+</span> -->

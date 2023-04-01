@@ -16,6 +16,8 @@ import { NavigationService } from './services/navigation.service';
 import { EquipmentHistoryComponent } from './components/equipment-history/equipment-history.component';
 import { CookieService } from 'ngx-cookie-service';
 import { CommonModule } from '@angular/common';
+import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { CommonModule } from '@angular/common';
     PlayerDetailComponent,
     VideoComponent,
     EquipmentHistoryComponent,
+    BreadCrumbComponent,
+    SafePipe,
 
   ],
   imports: [
