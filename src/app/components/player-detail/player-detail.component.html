@@ -9,13 +9,13 @@
         <p class="card-text">{{playerId.posicion}}</p>
         <div class="row">
           <div class="col-6">
-            <p>Penalties:</p>
-            <p>Crosses:</p>
-            <p>Acceleration:</p>
-            <p>Dribbling:</p>
-            <p>Volleys:</p>
-            <p>Long Shots:</p>
-            <p class="card-text" routerLink="/detail/{{playerId.id}}/video">Jugadas</p>
+            <p>{{"penalties" | translate}}:</p>
+            <p>{{"crosses" | translate}}:</p>
+            <p>{{"acceleration" | translate}}:</p>
+            <p>{{"dribbling" | translate}}:</p>
+            <p>{{"volleys" | translate}}:</p>
+            <p>{{"longShots" | translate}}:</p>
+            <p class="card-text" routerLink="/detail/{{playerId.id}}/video">{{"plays" | translate}}</p>
           </div>
           <div class="col-6 caracterist">
             <div class="progress" style="height: 14px;">
@@ -48,7 +48,7 @@
                 [attr.aria-valuenow]="playerId.longShots" aria-valuemin="0" aria-valuemax="100">{{playerId.longShots}}%
               </div>
             </div>
-            <p class="card-text" routerLink="/detail/{{playerId.id}}/video">Video</p>
+            <p class="card-text" routerLink="/detail/{{playerId.id}}/video">{{"video" | translate}}</p>
           </div>
         </div>
       </div>

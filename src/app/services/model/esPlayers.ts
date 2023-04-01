@@ -18,10 +18,8 @@ export const EsPlayer :IEsPlayer[] = [
             "https://www.youtube.com/embed/GWc4F_DWPm4"
         ],
         teams: [
-            { nameTeam: 'Olympique Lyon', years: '2004-2005' },
-            { nameTeam: 'Olympique Lyon B', years: '2005-2006' },
-            { nameTeam: 'Olympique Lyon', years: '2006-2009' },
-            { nameTeam: 'Real Madrid', years: '2009-present' }
+            { nameTeam: 'Olympique Lyon', years: '2004-2009' },
+            { nameTeam: 'Real Madrid', years: '2009-2023' }
           ]
 
     },
@@ -42,8 +40,8 @@ export const EsPlayer :IEsPlayer[] = [
             "https://www.youtube.com/embed/rpo_mZXoyig"
         ],
         teams: [
-            { nameTeam: 'FC Barcelona B', years: '2003-2004' },
-            { nameTeam: 'FC Barcelona', years: '2004-present' }
+            { nameTeam: 'FC Barcelona', years: '2004-2021' },
+            { nameTeam: 'París Sanint-Germain FC', years: '2021-2023' }
           ]
 
     },
@@ -64,11 +62,11 @@ export const EsPlayer :IEsPlayer[] = [
             "https://www.youtube.com/embed/xSyRtEI6iAU"
         ],
         teams: [
-            { nameTeam: 'Sporting CP B', years: '2001-2002' },
-            { nameTeam: 'Sporting CP', years: '2002-2003' },
+            { nameTeam: 'Sporting CP B', years: '2001-2003' },
             { nameTeam: 'Manchester United', years: '2003-2009' },
             { nameTeam: 'Real Madrid', years: '2009-2018' },
-            { nameTeam: 'Juventus', years: '2018-present' }
+            { nameTeam: 'Juventus', years: '2018-2021' },
+            { nameTeam: 'Manchester United', years: '2021-2023' },
           ]
 
     },
@@ -89,12 +87,10 @@ export const EsPlayer :IEsPlayer[] = [
             "https://www.youtube.com/embed/DFcgVcwUYB8"
         ],
         teams: [
-            { nameTeam: 'Delta Warsaw', years: '2005-2006' },
-            { nameTeam: 'Legia Warsaw', years: '2006-2008' },
-            { nameTeam: 'Znicz Pruszków', years: '2008-2008' },
-            { nameTeam: 'Lech Poznań', years: '2008-2010' },
+            { nameTeam: 'Lech', years: '2008-2010' },
             { nameTeam: 'Borussia Dortmund', years: '2010-2014' },
-            { nameTeam: 'Bayern Munich', years: '2014-present' }
+            { nameTeam: 'Bayern Munich', years: '2014-2022' },
+            { nameTeam: 'FC Barcelona', years: '2022-2023' }
           ]
 
     }

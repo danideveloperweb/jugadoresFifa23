@@ -10,8 +10,8 @@
           <div *ngFor="let team of history.teams" class="col-md-6 mb-4">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Equipo: {{ team.nameTeam }}</h5>
-                <p class="card-text">Año: {{ team.years }}</p>
+                <h5 class="card-title">{{"team" | translate}}: {{ team.nameTeam }}</h5>
+                <p class="card-text">{{"year" | translate}}: {{ team.years }}</p>
               </div>
             </div>
           </div>

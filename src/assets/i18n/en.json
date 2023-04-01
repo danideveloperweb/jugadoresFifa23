@@ -1,5 +1,14 @@
 {
-    "type":"type",
-    "number":"Number",
-    "description":"Description"
+    "penalties": "Penalties",
+    "crosses": "Crosses",
+    "acceleration": "Acceleration",
+    "dribbling": "Dribbling",
+    "volleys": "Volleys",
+    "longShots": "Long shots",
+    "plays": "Plays",
+    "go": "Go",
+    "team": "Team",
+    "year": "Year",
+    "video": "Video",
+    "equimentHistory": "Equiment History"
 }

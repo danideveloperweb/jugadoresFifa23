@@ -1,45 +1,59 @@
 import { AppRoutingModule } from './app-routing.module';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+import { HomeService } from './services/home.service';
+import { NavigationService } from './services/navigation.service';
+
+import { SafePipe } from './safe.pipe';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
+import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
 import { CardComponent } from './components/card/card.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { EquipmentHistoryComponent } from './components/equipment-history/equipment-history.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeService } from './services/home.service';
+import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { PlayerDetailComponent } from './components/player-detail/player-detail.component';
 import { VideoComponent } from './components/video/video.component';
-import { NavigationService } from './services/navigation.service';
-import { EquipmentHistoryComponent } from './components/equipment-history/equipment-history.component';
-import { CommonModule } from '@angular/common';
-import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
-import { SafePipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    BreadCrumbComponent,
     CardComponent,
-    NavbarComponent,
+    EquipmentHistoryComponent,
     FooterComponent,
+    HomeComponent,
+    NavbarComponent,
     PlayerDetailComponent,
     VideoComponent,
-    EquipmentHistoryComponent,
-    BreadCrumbComponent,
     SafePipe,
 
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    CommonModule,
     RouterModule,
     HttpClientModule,
-    CommonModule 
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [HomeService, NavigationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export function httpTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}

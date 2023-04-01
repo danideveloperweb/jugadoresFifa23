@@ -1,5 +1,15 @@
 {
-    "type":"Tipo",
-    "number":"Número",
-    "description":"Descripción"
+    "penalties": "Penaltis",
+    "crosses": "Centros",
+    "acceleration": "Aceleración",
+    "dribbling": "Regate",
+    "volleys": "Voleas",
+    "longShots": "Disparos de larga distancia",
+    "plays": "Jugadas",
+    "go": "Ir",
+    "team": "Equipo",
+    "year": "Año",
+    "video": "Video",
+    "equimentHistory": "Historia de equipo"
 }
+
