@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
+He instalado paquete de translate para hacer el multiidioma...
+He creado mi propia libreria, para crear la libreria he de crear un proyecto en blanco ng new MyDaniFooter --create-application=false
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
