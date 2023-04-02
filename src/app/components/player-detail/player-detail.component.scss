@@ -1,3 +1,4 @@
+@import "src/styles.scss";
 .card {
     max-width: 80%;
     text-align: center;
@@ -6,9 +7,6 @@
     box-shadow: 5px 5px 10px #a1a1a1,
         -5px -5px 10px #ffffff;
 
-}
-
-.card {
     .col-md-7 {
         .row {
             .col-6 {
@@ -35,3 +33,13 @@
 .caracterist {
     margin-top: 1rem;
 }
+
+@media (max-width: 767.98px) {
+    .card {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+@include btn-video;
+
+  

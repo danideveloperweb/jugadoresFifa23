@@ -6,12 +6,14 @@ import { PlayerDetailComponent } from './components/player-detail/player-detail.
 import { VideoComponent } from './components/video/video.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, data: { breadcrumb: 'Inicio' } },
-  { path: 'detail/:id', component: PlayerDetailComponent, data: { breadcrumb: 'detail/{{id}}' } },
+  { path: 'home', component: HomeComponent, data: { breadcrumb: 'Home' } },
+  { path: 'detail/:id', component: PlayerDetailComponent, data: { breadcrumb: 'Detail/{{id}}' } },
   { path: 'detail/:id/video', component: VideoComponent, data: { breadcrumb: 'Video' } },
-  { path: 'detail/:id/video/history', component: EquipmentHistoryComponent, data: { breadcrumb: 'Historial de equipo' } },
+  { path: 'detail/:id/video/history', component: EquipmentHistoryComponent, data: { breadcrumb: 'History' } },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
+
+
 
 
 @NgModule({

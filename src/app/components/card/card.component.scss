@@ -1,15 +1,24 @@
 @import "src/styles.scss";
-
 .card {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  box-shadow: 5px 5px 7px #797979, -5px -5px 7px #ffffff;
-  max-width: 500px;
-  max-height: 500px;
+  position: absolute;
+  transition: transform 0.6s;
 
+  &:hover,
+  &.active {
+    z-index: 1000;
+  }
+}
+.card-container {
+  transition: all 0.5s ease;
+
+  .card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 7px #797979, -5px -5px 7px #ffffff;
+    transition: all 1s ease; 
 
   .card-img-container {
     position: relative;
@@ -32,6 +41,7 @@
       &::before {
         opacity: 1;
       }
+
       img {
         transform: scale(1.1);
       }
@@ -48,6 +58,8 @@
   }
 
   .card-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: "Roboto", sans-serif;
     position: absolute;
     bottom: -190px;
     color: rgb(0, 0, 0);
@@ -60,7 +72,6 @@
     z-index: 1;
 
     h5 {
-      font-family: 'Roboto', sans-serif;
       font-size: 1.5rem;
       font-weight: 500;
       text-transform: uppercase;
@@ -72,7 +83,6 @@
     }
 
     p {
-      font-family: 'Roboto', sans-serif;
       font-size: 1rem;
       font-weight: 400;
       opacity: 0;
@@ -85,6 +95,9 @@
   }
 
   @media screen and (max-width: 768px) {
+    .card {
+      transition: none; 
+    }
     .card-content {
       min-height: 100px;
 
@@ -132,4 +145,5 @@
     }
   }
 
+}
 }
