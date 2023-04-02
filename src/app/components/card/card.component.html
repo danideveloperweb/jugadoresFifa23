@@ -1,21 +1,26 @@
-<div class="card mx-auto">
-  <div id="cImgContainer" class="card-img-container">
-    <img [src]="esPlayerCard.img" class="card-img-top img-fluid" [alt]="esPlayerCard.name">
-  </div>
-  <div class="card-content text-center">
-    <h5 class="card-title">{{esPlayerCard.name}}</h5>
-    <div class="row">
-      <div class="col-sm-6">
-        <p class="card-text ">{{"penalties" | translate}}: {{esPlayerCard.penalties}}</p>
-        <p class="card-text">{{"crosses" | translate}}: {{esPlayerCard.crosses}}</p>
-        <p class="card-text">{{"acceleration" | translate}}: {{esPlayerCard.acceleration}}</p>
-      </div>
-      <div class="col-sm-6">
-        <p class="card-text">{{"dribbling" | translate}}: {{esPlayerCard.dribbling}}</p>
-        <p class="card-text">{{"volleys" | translate}}: {{esPlayerCard.volleys}}</p>
-        <p class="card-text">{{"longShots" | translate}}: {{esPlayerCard.longShots}}</p>
+<div class="card-container mx-auto">
+  <div class="card mx-auto" [ngStyle]="hover ? { 'transform': getCardHoverStyle() } : {}" (mouseover)="hover = true" 
+    (mouseout)="hover = false" [class.active]="hover">
+    <div id="cImgContainer" class="card-img-container">
+      <img [src]="esPlayerCard.img" class="card-img-top img-fluid" [alt]="esPlayerCard.name">
+    </div>
+    <div class="card-content text-center">
+      <h5 class="card-title">{{esPlayerCard.name}}</h5>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="card-text ">{{"penalties" | translate}}: {{esPlayerCard.penalties}}</p>
+          <p class="card-text">{{"crosses" | translate}}: {{esPlayerCard.crosses}}</p>
+          <p class="card-text">{{"acceleration" | translate}}: {{esPlayerCard.acceleration}}</p>
+        </div>
+        <div class="col-sm-6">
+          <p class="card-text">{{"dribbling" | translate}}: {{esPlayerCard.dribbling}}</p>
+          <p class="card-text">{{"volleys" | translate}}: {{esPlayerCard.volleys}}</p>
+          <p class="card-text">{{"longShots" | translate}}: {{esPlayerCard.longShots}}</p>
+        </div>
       </div>
     </div>
   </div>
+  
 </div>
+
 

@@ -1,11 +1,29 @@
-*{
-  text-decoration: none;
+.breadcrumb {
+  background: none;
+  font-size: 0.8em;
+  margin: 0;
+  a,
+  span {
+    color: darkgrey;
+  }
+  a:hover,
+  span:hover {
+    color: dimgrey;
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+    float: left;
+    margin: 5px;
+  }
+  li:last-child {
+    margin-right: 20px;
+  }
+  li::after {
+    content: "->";
+    color: darkgrey;
+  }
+  li:last-child::after {
+    content: "";
+  }
 }
-.container {
-  margin-bottom: 2rem;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  padding-left: 1.3em
-}
-  

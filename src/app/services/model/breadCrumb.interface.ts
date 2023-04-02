@@ -1,5 +1,4 @@
-export interface IBreadCrumb {
-    label: string;
-    url: string;
-  }
-  
+export interface Breadcrumb {
+  label: string;
+  url: string;
+}
