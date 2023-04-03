@@ -1,4 +1,5 @@
 @import "src/styles.scss";
+
 .card {
     max-width: 80%;
     text-align: center;
@@ -40,6 +41,5 @@
         margin-left: 0;
     }
 }
-@include btn-video;
 
-  
+@include btn-video;

@@ -21,7 +21,6 @@ export class VideoComponent implements OnInit {
     this.activateRoute.params.subscribe((params: any) => {
       this.playerId = this.detailService.getEsPlayerDetail(params['id']);
     });
-
   }
 }
 

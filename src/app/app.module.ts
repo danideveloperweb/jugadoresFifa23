@@ -16,11 +16,11 @@ import { AppComponent } from './app.component';
 import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
 import { CardComponent } from './components/card/card.component';
 import { EquipmentHistoryComponent } from './components/equipment-history/equipment-history.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PlayerDetailComponent } from './components/player-detail/player-detail.component';
 import { VideoComponent } from './components/video/video.component';
+import { MydaniFooterModule } from 'mydani-footer';
 
 @NgModule({
   declarations: [
@@ -28,13 +28,11 @@ import { VideoComponent } from './components/video/video.component';
     BreadCrumbComponent,
     CardComponent,
     EquipmentHistoryComponent,
-    FooterComponent,
     HomeComponent,
     NavbarComponent,
     PlayerDetailComponent,
     VideoComponent,
     SafePipe,
-
   ],
   imports: [
     AppRoutingModule,
@@ -42,6 +40,7 @@ import { VideoComponent } from './components/video/video.component';
     CommonModule,
     RouterModule,
     HttpClientModule,
+    MydaniFooterModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

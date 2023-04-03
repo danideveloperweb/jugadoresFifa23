@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   playerHome!: IEsPlayer[];
 
   constructor(private playerHomeService: HomeService,
-              private router: Router){ }
+    private router: Router) { }
 
   ngOnInit(): void {
     this.playerHome = this.playerHomeService.getEsPlayer();

@@ -14,7 +14,7 @@ export class EquipmentHistoryComponent implements OnInit {
   history!: IEsPlayer;
 
   constructor(private activateRoute: ActivatedRoute,
-              private detailService: HomeService ) {}
+    private detailService: HomeService) { }
 
   ngOnInit(): void {
     const playerId = this.activateRoute.snapshot.paramMap.get('id');
