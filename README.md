@@ -1,31 +1,68 @@
+![imagen](https://user-images.githubusercontent.com/91413466/229430927-5a1a4033-af27-4f66-8c15-c5ed8fc114c9.png)
+
 # JugadoreFifa23
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+# Description 
+
+Translated to English: "This spa displays 4 pages. The first shows four players with information on hover. Then you click on them and enter the detailed view where you can see the details. On this page, there is a button that takes you to personalized videos, and here there is a button that takes you to the history of the teams they have been on.
+The project is in multiple languages.
+
+# Main features
 
 He instalado paquete de translate para hacer el multiidioma...
-He creado mi propia libreria, para crear la libreria he de crear un proyecto en blanco ng new MyDaniFooter --create-application=false
 
-## Development server
+I have created my own library for a project, a footer that I have uploaded to npm. The usage instructions are in the npm readme.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+I created it using the following commands:
 
-## Code scaffolding
+ng new MyDaniFooter --create-application=false
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+cd MyDaniFooter
 
-## Build
+ng generate mydany-footer to generate the library
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+I added the HTML and CSS code in mydani-footer.component.ts
 
-## Running unit tests
+I configured it in the package.json file and remembered to update the version number each time I made changes.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+I ran ng build to build the library and accessed it in its dist folder.
 
-## Running end-to-end tests
+I logged into npm using npm login and ran npm publish to publish it.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+A package has been installed for translation and two JSON files have been created where the two languages to be translated are located. It is a web with routing to navigate between different components. In this case, the detail has been implemented through the ID that enters a specific player
 
-## Further help
+## Access to the project
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# jugadoresFifa23
+Clone this repository
+
+`git clone https://github.com/danideveloperweb/Pokemon2.git`
+
+Install dependencies
+
+`npm install`
+
+Run the app
+
+`ng serve -o`
+
+Navigate to
+
+`http://localhost:4200/`
+
+## Access to the web Url
+
+`https://jugadores-fifa23-9dz62c7pn-danideveloperweb.vercel.app/home`
+
+## Technologies used
+
+This project was generated with Angular CLI version 15.2.4.
+
+TypeScript 62.2%
+
+HTML 20.4%
+
+SCSS 17.4%, Mxins, Bootstrap.
+
+## License
+
+©Danideveloperweb
