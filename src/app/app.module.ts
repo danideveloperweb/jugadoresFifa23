@@ -1,6 +1,7 @@
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
+import { MydaniFooterModule } from 'mydani-footer';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -20,7 +21,6 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PlayerDetailComponent } from './components/player-detail/player-detail.component';
 import { VideoComponent } from './components/video/video.component';
-import { MydaniFooterModule } from 'mydani-footer';
 
 @NgModule({
   declarations: [
