@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row row-cols-1 row-cols-md-2 ">
         <div class="col" *ngFor="let player of playerHome; let i = index">
-            <app-card [esPlayerCard]="player" [cardIndex]="i" routerLink="/detail/{{player.id}}"></app-card>
+            <app-card [esPlayerCard]="player" [cardIndex]="i" routerLink="detail/{{player.id}}"></app-card>
         </div>
     </div>
 </div>

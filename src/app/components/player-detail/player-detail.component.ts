@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HomeService } from 'src/app/services/home.service';
 
 
@@ -13,7 +13,7 @@ export class PlayerDetailComponent implements OnInit {
   playerId: any;
 
   constructor(private activateRoute: ActivatedRoute,
-    private detailService: HomeService) { }
+    private detailService: HomeService, private router: Router) { }
 
   ngOnInit(): void {
     this.activateRoute.params.subscribe((params: any) => {
