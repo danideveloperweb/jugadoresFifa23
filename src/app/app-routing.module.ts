@@ -6,10 +6,44 @@ import { PlayerDetailComponent } from './components/player-detail/player-detail.
 import { VideoComponent } from './components/video/video.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, data: { breadcrumb: 'Home' } },
-  { path: 'detail/:id', component: PlayerDetailComponent, data: { breadcrumb: '{{id}}' } },
-  { path: 'detail/:id/video', component: VideoComponent, data: { breadcrumb: 'Video' } },
-  { path: 'detail/:id/video/history', component: EquipmentHistoryComponent, data: { breadcrumb: 'History' } },
+  {
+    path: 'home',
+    data: { breadcrumb: 'Home' },
+    children: [
+      {
+        path: '',
+        data: { breadcrumb: null },
+        component: HomeComponent,
+      },
+      {
+        path: 'detail/:id',
+        data: { breadcrumb: '{{id}}' },
+        children: [
+          {
+            path: '',
+            data: { breadcrumb: null },
+            component: PlayerDetailComponent,
+          },
+          {
+            path: 'video',
+            data: { breadcrumb: 'Video' },
+            children: [
+              {
+                path: '',
+                data: { breadcrumb: null },
+                component: VideoComponent,
+              },
+              {
+                path: 'history',
+                component: EquipmentHistoryComponent,
+                data: { breadcrumb: 'History' },
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 
