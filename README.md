@@ -9,8 +9,6 @@ The project is in multiple languages.
 
 # Main features
 
-He instalado paquete de translate para hacer el multiidioma...
-
 I have created my own library for a project, a footer that I have uploaded to npm. The usage instructions are in the npm readme.
 
 I created it using the following commands:
