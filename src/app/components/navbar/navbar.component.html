@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid justify-content-between">
     <div class="d-flex align-items-center">
-      <img src="assets/img/pelota.png" style="width: 50px; height: 50px; margin-right: 10px;">
-      <span style="font-size: 20px;">FIFA23</span>
+      <img src="assets/img/pelota.png" class="logo-img">
+      <span class="logo-text">FIFA23</span>
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" [routerLink]="'home'">Home</a>
@@ -11,7 +11,8 @@
     </div>
     <div class="form-inline mr-sm-2">
       <select class="form-control" #selectedLang (change)="switchLanguage(selectedLang.value)">
-        <option *ngFor="let language of translate.getLangs()" [value]="language" [selected]="language === translate.currentLang">
+        <option *ngFor="let language of translate.getLangs()" [value]="language"
+          [selected]="language === translate.currentLang">
           {{ language }}
         </option>
       </select>

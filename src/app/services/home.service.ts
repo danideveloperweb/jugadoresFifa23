@@ -17,5 +17,4 @@ export class HomeService {
   getEsPlayerDetail(id: any) {
     return this.esPlayer[id - 1];
   }
-
 }
