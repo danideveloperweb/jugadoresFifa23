@@ -4,7 +4,7 @@
 
 # Description 
 
-Translated to English: "This spa displays 4 pages. The first shows four players with information on hover. Then you click on them and enter the detailed view where you can see the details. On this page, there is a button that takes you to personalized videos, and here there is a button that takes you to the history of the teams they have been on.
+This spa displays 4 pages. The first shows four players with information on hover. Then you click on them and enter the detailed view where you can see the details. On this page, there is a button that takes you to personalized videos, and here there is a button that takes you to the history of the teams they have been on.
 The project is in multiple languages.
 
 # Main features
@@ -26,6 +26,10 @@ I configured it in the package.json file and remembered to update the version nu
 I ran ng build to build the library and accessed it in its dist folder.
 
 I logged into npm using npm login and ran npm publish to publish it.
+
+npm https://www.npmjs.com/package/mydani-footer?activeTab=readme
+
+git npm https://github.com/danideveloperweb/MYDANIFOOTER
 
 A package has been installed for translation and two JSON files have been created where the two languages to be translated are located. It is a web with routing to navigate between different components. In this case, the detail has been implemented through the ID that enters a specific player
 
