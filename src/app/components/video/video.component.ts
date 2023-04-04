@@ -14,7 +14,8 @@ export class VideoComponent implements OnInit {
   playerId: any;
   saniUrl!: SafeResourceUrl[];
 
-  constructor(private activateRoute: ActivatedRoute,
+  constructor(
+    private activateRoute: ActivatedRoute,
     private detailService: HomeService) { }
 
   ngOnInit(): void {

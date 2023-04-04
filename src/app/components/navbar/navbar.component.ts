@@ -10,7 +10,8 @@ import { NavigationService } from 'src/app/services/navigation.service';
 })
 export class NavbarComponent {
 
-  constructor(public navigation: NavigationService,
+  constructor(
+    public navigation: NavigationService,
     public translate: TranslateService,
     public activateRoute: ActivatedRoute,
   ) {

@@ -1,3 +1,4 @@
+@import "src/styles.scss";
 @mixin navbar-color {
   .navbar {
     background-color: #F8F5E4;
@@ -23,3 +24,4 @@
 .logo-text {
   font-size: 20px;
 }
+@include btn-video;

@@ -12,8 +12,10 @@ export class PlayerDetailComponent implements OnInit {
 
   playerId: any;
 
-  constructor(private activateRoute: ActivatedRoute,
-    private detailService: HomeService, private router: Router) { }
+  constructor(
+    private activateRoute: ActivatedRoute,
+    private detailService: HomeService
+    ) { }
 
   ngOnInit(): void {
     this.activateRoute.params.subscribe((params: any) => {
