@@ -81,9 +81,17 @@ Navigate to
 
 `http://localhost:4200/`
 
+## As you can see
+
+![gifFifa](https://user-images.githubusercontent.com/91413466/229891697-6fb2b69b-1d74-4b38-ad2f-6c6ea8e30848.gif)
+
+### Responsive
+
+![imagen](https://user-images.githubusercontent.com/91413466/229892844-8ba03010-8858-4c6d-ac64-8da6d9024c14.png)
+
 ## Access to the web Url
 
-`https://jugadores-fifa23-9dz62c7pn-danideveloperweb.vercel.app/home`
+`https://fifa-dani.vercel.app/home`
 
 ## Technologies used
 
