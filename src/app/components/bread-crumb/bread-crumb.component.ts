@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd, Event } from '@angular/router';
 import { filter, distinctUntilChanged } from 'rxjs/operators';
 import { IBreadCrumb } from 'src/app/services/model/breadCrumb.interface';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-bread-crumb',
@@ -13,7 +14,8 @@ export class BreadCrumbComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    public navigation: NavigationService
   ) {
     this.router.events.pipe(
       filter((event: Event) => event instanceof NavigationEnd),

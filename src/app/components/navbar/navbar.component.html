@@ -9,13 +9,18 @@
         </li>
       </ul>
     </div>
-    <div class="form-inline mr-sm-2">
-      <select class="form-control" #selectedLang (change)="switchLanguage(selectedLang.value)">
-        <option *ngFor="let language of translate.getLangs()" [value]="language"
-          [selected]="language === translate.currentLang">
-          {{ language }}
-        </option>
-      </select>
+    <div class="d-flex align-items-center">
+      <div class="text-center btn-video mr-3">
+        <a class="btn-video-link align-middle" (click)="navigation.goBack()">{{"back" | translate}} </a>
+      </div>
+      <div class="form-inline mr-sm-2">
+        <select class="form-control" #selectedLang (change)="switchLanguage(selectedLang.value)">
+          <option *ngFor="let language of translate.getLangs()" [value]="language"
+            [selected]="language === translate.currentLang">
+            {{ language }}
+          </option>
+        </select>
+      </div>
     </div>
   </div>
 </nav>

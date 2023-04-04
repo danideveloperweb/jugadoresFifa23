@@ -13,7 +13,8 @@ export class EquipmentHistoryComponent implements OnInit {
 
   history!: IEsPlayer;
 
-  constructor(private activateRoute: ActivatedRoute,
+  constructor(
+    private activateRoute: ActivatedRoute,
     private detailService: HomeService) { }
 
   ngOnInit(): void {
