@@ -1,36 +1,35 @@
+@import '~font-awesome/css/font-awesome.css';
+
 .breadcrumb {
-  background: none;
-  font-size: 0.8em;
-  margin: 0;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
+  background-color: transparent;
+}
 
-  a,
-  span {
-    color: darkgrey;
-  }
+.breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s;
 
-  a:hover,
-  span:hover {
-    color: dimgrey;
-    text-decoration: none;
+  &:hover {
+    color: #343a40;
     cursor: pointer;
   }
 
-  li {
-    list-style: none;
-    float: left;
-    margin: 5px;
-  }
-
-  li:last-child {
-    margin-right: 20px;
-  }
-
-  li::after {
-    content: "->";
-    color: darkgrey;
-  }
-
-  li:last-child::after {
-    content: "";
+  &.router-link-active {
+    color: #343a40;
+    font-weight: 600;
   }
 }
+
+.breadcrumb__icon {
+  margin: 0 8px;
+  color: #adb5bd;
+  opacity: 0.5;
+}
+
+
