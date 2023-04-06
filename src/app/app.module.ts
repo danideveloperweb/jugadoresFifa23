@@ -21,7 +21,6 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PlayerDetailComponent } from './components/player-detail/player-detail.component';
 import { VideoComponent } from './components/video/video.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +33,6 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     PlayerDetailComponent,
     VideoComponent,
     SafePipe,
-    NotFoundComponent,
   ],
   imports: [
     AppRoutingModule,
