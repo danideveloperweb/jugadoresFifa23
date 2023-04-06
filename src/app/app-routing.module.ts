@@ -4,10 +4,8 @@ import { EquipmentHistoryComponent } from './components/equipment-history/equipm
 import { HomeComponent } from './components/home/home.component';
 import { PlayerDetailComponent } from './components/player-detail/player-detail.component';
 import { VideoComponent } from './components/video/video.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: 'not-found', component: NotFoundComponent },
   {
     path: 'home',
     data: { breadcrumb: 'Home' },
@@ -46,7 +44,7 @@ const routes: Routes = [
       },
     ],
   },
-  { path: '**', pathMatch: 'full', redirectTo: 'not-found' },
+  { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 
 @NgModule({
