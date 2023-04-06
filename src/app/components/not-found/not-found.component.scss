@@ -1,0 +1,69 @@
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.not-found__content {
+    text-align: center;
+}
+
+.not-found__error {
+    font-size: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.not-found__error-number,
+.not-found__error-oh {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.not-found__error-oh {
+    position: relative;
+    animation: oh-animation 2s infinite;
+}
+
+.not-found__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.not-found__description {
+    margin-bottom: 2rem;
+}
+
+.not-found__button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #6c757d;
+    border-radius: 5px;
+    color: #6c757d;
+    background-color: #f8f9fa;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover {
+        background-color: #6c757d;
+        color: #f8f9fa;
+    }
+}
+
+@keyframes oh-animation {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
