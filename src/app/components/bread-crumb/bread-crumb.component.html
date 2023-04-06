@@ -1,6 +1,16 @@
 <ol class="breadcrumb">
-  <li *ngFor="let breadcrumb of breadcrumbs">
-    <span [routerLink]="breadcrumb.url" routerLinkActive="router-link-active">
+  <li *ngFor="let breadcrumb of breadcrumbs; let i = index">
+    <span
+      [routerLink]="breadcrumb.url"
+      routerLinkActive="router-link-active"
+      class="breadcrumb__item"
+    >
+      <ng-container *ngIf="i === 0">
+        <i class="fa fa-home"></i>
+      </ng-container>
+      <ng-container *ngIf="i !== 0">
+        <i class="fa fa-chevron-right breadcrumb__icon"></i>
+      </ng-container>
       {{ breadcrumb.label }}
     </span>
   </li>
